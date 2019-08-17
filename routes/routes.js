@@ -5,5 +5,6 @@ module.exports = function(app) {
     //app.get('/new-book', book.new);
     app.get('/single-book', book.show);
     app.post('/book/create', book.create);
+    app.get('/book/:bookID', book.single);
   
   }

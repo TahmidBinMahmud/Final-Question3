@@ -12,7 +12,7 @@
 
     <style>
         .centered {
-            color:snow;
+            color:darkmagenta;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,11 +27,11 @@
                   <div class="card-body">
                       <img class="card-img-top" src="images/blue.jpg" alt="Card image" style="border-radius: 50%; width:100%">
                       <div class="centered" style="text-align: center">
-                          <h2>Book Name</h2>
+                          <h2><%= books.title %></h2>
                           <br>
                           <br>
-                          <p>Author Name</p>
-                          <p>Rating</p>
+                          <p><%= books.author %></p>
+                          <p><%= books.rating %></p>
                       </div>
                     <h4 class="card-title" style="color:aliceblue">John Doe</h4>
                     <p class="card-text" style="color:aliceblue">Some example text some example text. John Doe is an architect and engineer</p>
