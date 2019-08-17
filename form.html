@@ -32,7 +32,7 @@
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Enter number between 0 to 5.</div>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button id="done" type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
 
@@ -57,6 +57,12 @@
         }).fail(function(response){
             console.log(response)
         })
+    })
+
+    $('#done').click(function(event){
+        var url = "/single-book";
+        window.location = url;
+        window.location.replace(url);
     })
 });
       </script>
