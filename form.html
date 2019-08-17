@@ -9,32 +9,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Form View</title>
+
+    <style>
+        #submitBook {background: #dff9fb; font-family:Arial, Helvetica, sans-serif}
+        #done {background: #60a3bc}
+    </style>
+
 </head>
 <body>
-    <div id="submitBook" class="jumbotron container">
-        <h2>NEW BOOK</h2>
-        <form action="/action_page.php" class="was-validated">
-          <div class="form-group">
-            <!-- <label for="uname">Title:</label> -->
-            <input type="text" class="form-control" id="titleName" placeholder="TITLE" name="uname" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please enter title.</div>
-          </div>
-          <div class="form-group">
-            <!-- <label for="uname">Username:</label> -->
-            <input type="text" class="form-control" id="authorName" placeholder="AUTHOR" name="uname" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please enter Author name.</div>
-          </div>
-          <div class="form-group">
-            <!-- <label for="uname">Username:</label> -->
-            <input type="number" min = "0" max = "5" class="form-control" id="ratingValue" placeholder="RATING (0 to 5)" name="uname" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Enter number between 0 to 5.</div>
-          </div>
-          <button id="done" type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
+            <div id="submitBook" class="col-3 jumbotron container">
+              <h2 style="text-align: center">NEW BOOK</h2>
+              <form action="/action_page.php" class="was-validated">
+                <div class="form-group">
+                  <!-- <label for="uname">Title:</label> -->
+                  <input type="text" style="text-align: center" class="form-control" id="titleName" placeholder="TITLE" name="uname"
+                    required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please enter title.</div>
+                </div>
+                <div class="form-group">
+                  <!-- <label for="uname">Author:</label> -->
+                  <input type="text" style="text-align: center" class="form-control" id="authorName" placeholder="AUTHOR"
+                    name="uname" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please enter Author name.</div>
+                </div>
+                <div class="form-group">
+                  <!-- <label for="uname">Rating:</label> -->
+                  <input type="number" style="text-align: center" min="0" max="5" class="form-control" id="ratingValue"
+                    placeholder="RATING (0 to 5)" name="uname" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Enter number between 0 to 5.</div>
+                </div>
+                <div class="row">
+                  <div class="col text-center">
+                    <button id="done" type="submit" class="btn btn-primary">DONE</button>
+                  </div>
+                </div>
+              </form>
+            </div>
 
 
       <script>

@@ -3,6 +3,7 @@ var express = require('express');
 var app = express();
 var server= http.Server(app);
 var bodyParser = require("body-parser");
+var path = require('path');
 
 var db_url = "mongodb+srv://Tahmid:asdf@cluster0-mzzjc.mongodb.net/test?retryWrites=true&w=majority"
 
@@ -14,6 +15,7 @@ mongoose.connection.on('error', function(err){
   console.log('Could not connect to mongodb');
 })
 
+app.use(express.static(path.join(__dirname, 'static')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
