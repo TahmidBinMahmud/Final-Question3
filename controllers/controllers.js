@@ -28,7 +28,7 @@ module.exports.show = function(request, response) {
         });
   
     })
-    console.log(request.body);
+    console.log(request.body._id);
   }
 
   module.exports.single = function(request, response) {
